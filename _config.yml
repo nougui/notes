@@ -3,3 +3,5 @@ description: Nougui - Notes
 theme: jekyll-theme-hacker
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  hard_wrap: true
