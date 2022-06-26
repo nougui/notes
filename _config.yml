@@ -1,1 +1,5 @@
+name: Nougui - Notes
+description: Nougui - Notes
 theme: jekyll-theme-hacker
+markdown: kramdown
+highlighter: rouge
