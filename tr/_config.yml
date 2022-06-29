@@ -1,0 +1,8 @@
+---
+name: Nougui - Notlar
+description: Nougui - Notlar
+theme: jekyll-theme-hacker
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  hard_wrap: true
