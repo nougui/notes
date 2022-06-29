@@ -1,5 +1,7 @@
 # Notlar
 
+<a href="https://gitlocalize.com/repo/7634/tr?utm_source=badge"> <img src="https://gitlocalize.com/repo/7634/tr/badge.svg" /> </a>
+
 ## Kategoriler
 
 - [Dotnet](dotnet/README.md)
