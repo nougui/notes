@@ -1,6 +1,6 @@
 # Notlar
 
-<a href="https://gitlocalize.com/repo/7634/whole_project?utm_source=badge"> <img src="https://gitlocalize.com/repo/7634/whole_project/badge.svg"> </a>
+<a href="https://gitlocalize.com/repo/7634/tr?utm_source=badge"> <img src="https://gitlocalize.com/repo/7634/tr/badge.svg" /> </a>
 
 ## Kategoriler
 
