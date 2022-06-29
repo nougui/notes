@@ -1,6 +1,6 @@
 # Notlar
 
-## Categories
+## Kategoriler
 
 - [Dotnet](dotnet/README.md)
 - [Gitops](gitops/README.md)
