@@ -99,3 +99,11 @@ iptables -I INPUT -p tcp --dport 8071:8079 -j ACCEPT -m comment --comment "Allow
 ```sh
 sudo iptables -F && sudo iptables-save | sudo tee /etc/iptables/rules.v4
 ```
+
+## SSH
+```sh
+sudo nano /etc/ssh/sshd_config
+```
+```sh
+service ssh restart
+```
