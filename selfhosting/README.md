@@ -1,7 +1,7 @@
-## Server Initial Setup Steps
+# Server Initial Setup Steps
 
 
-### Applications
+## Applications
 - [CertBot](certbot/README.md) - `SSL` Creating Let's Encrypt Certificates
 - [K3S](k3s/README.md) - `k8s` K3s
 - [Mailjet](mailjet/README.md) - `Mail` Mailjet
@@ -19,7 +19,7 @@
 - [Wikijs](wikijs/README.md) - `WIKI` Wikijs
 - [Wireguard](wireguard/README.md) - `VPN` Wireguard Vpn
 
-### Ubuntu
+## Ubuntu
 
 Apt
 ```sh
@@ -42,7 +42,7 @@ Setup ssh key
 sudo nano ~/.ssh/authorized_keys
 ```
 
-### Docker
+## Docker
 
 ```sh
 sudo apt-get update && \
@@ -58,7 +58,7 @@ echo \
 sudo apt-get update && \
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
-### Hosts
+## Hosts
 Replace inside of file
 ```sh
 sudo sed -i '/#start/,/#end/c\
@@ -73,7 +73,7 @@ sudo sed -i '/#start/,/#end/c\
 #end' /etc/hosts
 ```
 
-### Iptables
+## Iptables
 
 Allow All
 ```sh
@@ -106,4 +106,37 @@ sudo nano /etc/ssh/sshd_config
 ```
 ```sh
 service ssh restart
+```
+
+## Other
+### inotify
+change to 512
+```sh
+sudo nano /proc/sys/fs/inotify/max_user_instances
+```
+```sh
+sudo sysctl -p
+```
+
+### adguard home
+change to 512
+```sh
+sudo mkdir /etc/systemd/resolved.conf.d
+```
+```sh
+sudo nano /etc/systemd/resolved.conf.d/adguardhome.conf
+```
+```
+[Resolve]
+DNS=127.0.0.1
+DNSStubListener=no
+```
+```sh
+mv /etc/resolv.conf /etc/resolv.conf.backup
+```
+```sh
+ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+```
+```sh
+systemctl reload-or-restart systemd-resolved
 ```
